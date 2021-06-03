@@ -17,10 +17,10 @@ SEED_KEY: str = '-SEED-'
 GEN_KEY: str = '-GEN-'
 PASS_KEY: str = '-PASS-'
 
-layout = [[sg.Text('Enter seed 6 digit password seed from customer, then press Generate')],
+layout = [[sg.Text('Enter seed 6 digit password seed, then press Generate')],
           [sg.Text('Seed:'), sg.Input(key=SEED_KEY, enable_events=True, default_text='e.g: 142565', text_color='gray')],
           [sg.Button('Generate', key=GEN_KEY)],
-          [sg.Text('After pressing generate, provide this passcode to the customer:')],
+          [sg.Text('Press Generate to create the passcode:')],
           [sg.Text('Code:'), sg.Input(key=PASS_KEY, readonly=True)]]
 
 window = sg.Window(title='Passcode Generator', layout=layout, icon=IMAGE_ICON)
