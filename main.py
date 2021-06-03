@@ -23,7 +23,7 @@ layout = [[sg.Text('Enter seed 6 digit password seed from customer, then press G
           [sg.Text('After pressing generate, provide this passcode to the customer:')],
           [sg.Text('Code:'), sg.Input(key=PASS_KEY, readonly=True)]]
 
-window = sg.Window(title='SNX Passcode Generator', layout=layout, icon=IMAGE_ICON)
+window = sg.Window(title='Passcode Generator', layout=layout, icon=IMAGE_ICON)
 
 while True:
     invalid_found = False
